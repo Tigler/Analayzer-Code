@@ -1,0 +1,116 @@
+\hypertarget{classanalyzer_1_1code_1_1CountOperators}{}\section{analyzer.\+code.\+Count\+Operators Class Reference}
+\label{classanalyzer_1_1code_1_1CountOperators}\index{analyzer.\+code.\+Count\+Operators@{analyzer.\+code.\+Count\+Operators}}
+Inheritance diagram for analyzer.\+code.\+Count\+Operators\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classanalyzer_1_1code_1_1CountOperators}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classanalyzer_1_1code_1_1CountOperators_a35cd40aef8c6e9b31aa51b667b7e3367}{Count\+Operators} ()
+\item 
+void \hyperlink{classanalyzer_1_1code_1_1CountOperators_a0dc10beb196cf80583707cbe4049eae2}{calculate} (\hyperlink{classanalyzer_1_1code_1_1Event}{Event} event)
+\item 
+double \hyperlink{classanalyzer_1_1code_1_1CountOperators_ab5d3d7000eaaa974536c967ceee9dcc7}{get\+Result} ()
+\item 
+void \hyperlink{classanalyzer_1_1code_1_1CountOperators_ad068949f06b712b55f12b03673a99278}{reset} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \hyperlink{classanalyzer_1_1code_1_1CountOperators_adce2eacc351b1a2c7d244a712d078477}{get\+Name} ()
+\item 
+static String \hyperlink{classanalyzer_1_1code_1_1CountOperators_aa89a8387e3c44af558eccf0733a98230}{get\+Mark} (double bad, double good, double metric)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Метрика просчета количества операторов между описанием и инициализацией переменной \begin{DoxyAuthor}{Author}
+tigler 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classanalyzer_1_1code_1_1CountOperators_a35cd40aef8c6e9b31aa51b667b7e3367}\label{classanalyzer_1_1code_1_1CountOperators_a35cd40aef8c6e9b31aa51b667b7e3367}} 
+\index{analyzer\+::code\+::\+Count\+Operators@{analyzer\+::code\+::\+Count\+Operators}!Count\+Operators@{Count\+Operators}}
+\index{Count\+Operators@{Count\+Operators}!analyzer\+::code\+::\+Count\+Operators@{analyzer\+::code\+::\+Count\+Operators}}
+\subsubsection{\texorpdfstring{Count\+Operators()}{CountOperators()}}
+{\footnotesize\ttfamily analyzer.\+code.\+Count\+Operators.\+Count\+Operators (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Конструктор без параметров -\/ инициализирует переменные класса\+: Array\+List$<$\+Variable$>$ variables, и int max\+Count\+Operator 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classanalyzer_1_1code_1_1CountOperators_a0dc10beb196cf80583707cbe4049eae2}\label{classanalyzer_1_1code_1_1CountOperators_a0dc10beb196cf80583707cbe4049eae2}} 
+\index{analyzer\+::code\+::\+Count\+Operators@{analyzer\+::code\+::\+Count\+Operators}!calculate@{calculate}}
+\index{calculate@{calculate}!analyzer\+::code\+::\+Count\+Operators@{analyzer\+::code\+::\+Count\+Operators}}
+\subsubsection{\texorpdfstring{calculate()}{calculate()}}
+{\footnotesize\ttfamily void analyzer.\+code.\+Count\+Operators.\+calculate (\begin{DoxyParamCaption}\item[{\hyperlink{classanalyzer_1_1code_1_1Event}{Event}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+В зависимости от кода параметра event\+: Добавить переменную в список, если описание; Для каждой переменной инкрементировать их количество, если оператор; Вычислить максимальное количество операторов, если присваивание; Либо, не делать ничего. 
+\begin{DoxyParams}{Parameters}
+{\em event} & -\/ событие возникшее в синтаксическом анализаторе \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfaceanalyzer_1_1code_1_1IMetric}{analyzer.\+code.\+I\+Metric}.
+
+\mbox{\Hypertarget{classanalyzer_1_1code_1_1CountOperators_aa89a8387e3c44af558eccf0733a98230}\label{classanalyzer_1_1code_1_1CountOperators_aa89a8387e3c44af558eccf0733a98230}} 
+\index{analyzer\+::code\+::\+Count\+Operators@{analyzer\+::code\+::\+Count\+Operators}!get\+Mark@{get\+Mark}}
+\index{get\+Mark@{get\+Mark}!analyzer\+::code\+::\+Count\+Operators@{analyzer\+::code\+::\+Count\+Operators}}
+\subsubsection{\texorpdfstring{get\+Mark()}{getMark()}}
+{\footnotesize\ttfamily static String analyzer.\+code.\+Count\+Operators.\+get\+Mark (\begin{DoxyParamCaption}\item[{double}]{bad,  }\item[{double}]{good,  }\item[{double}]{metric }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Статический метод для получения описания оценки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bad} & -\/ значение плохой оценки \\
+\hline
+{\em good} & -\/ значение хорошей оценки \\
+\hline
+{\em metric} & -\/ текущая оценка \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Строку оценки, в зависимости от значений параметров 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classanalyzer_1_1code_1_1CountOperators_adce2eacc351b1a2c7d244a712d078477}\label{classanalyzer_1_1code_1_1CountOperators_adce2eacc351b1a2c7d244a712d078477}} 
+\index{analyzer\+::code\+::\+Count\+Operators@{analyzer\+::code\+::\+Count\+Operators}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!analyzer\+::code\+::\+Count\+Operators@{analyzer\+::code\+::\+Count\+Operators}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily static String analyzer.\+code.\+Count\+Operators.\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Статический метод для получения названия метрики. Использует перечисление \hyperlink{enumanalyzer_1_1code_1_1EnumNamesMetric}{Enum\+Names\+Metric} с названиями метрик. \begin{DoxyReturn}{Returns}
+Строку -\/ навание метрики. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classanalyzer_1_1code_1_1CountOperators_ab5d3d7000eaaa974536c967ceee9dcc7}\label{classanalyzer_1_1code_1_1CountOperators_ab5d3d7000eaaa974536c967ceee9dcc7}} 
+\index{analyzer\+::code\+::\+Count\+Operators@{analyzer\+::code\+::\+Count\+Operators}!get\+Result@{get\+Result}}
+\index{get\+Result@{get\+Result}!analyzer\+::code\+::\+Count\+Operators@{analyzer\+::code\+::\+Count\+Operators}}
+\subsubsection{\texorpdfstring{get\+Result()}{getResult()}}
+{\footnotesize\ttfamily double analyzer.\+code.\+Count\+Operators.\+get\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Получить максимальное количество операторов между описанием и присваиванием \begin{DoxyReturn}{Returns}
+переменную max\+Count\+Operator 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceanalyzer_1_1code_1_1IMetric}{analyzer.\+code.\+I\+Metric}.
+
+\mbox{\Hypertarget{classanalyzer_1_1code_1_1CountOperators_ad068949f06b712b55f12b03673a99278}\label{classanalyzer_1_1code_1_1CountOperators_ad068949f06b712b55f12b03673a99278}} 
+\index{analyzer\+::code\+::\+Count\+Operators@{analyzer\+::code\+::\+Count\+Operators}!reset@{reset}}
+\index{reset@{reset}!analyzer\+::code\+::\+Count\+Operators@{analyzer\+::code\+::\+Count\+Operators}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void analyzer.\+code.\+Count\+Operators.\+reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+cбрасывает значения переменных до начальных 
+
+Implements \hyperlink{interfaceanalyzer_1_1code_1_1IMetric}{analyzer.\+code.\+I\+Metric}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/tigler/\+Net\+Beans\+Projects/\+Plagiat/src/analyzer/code/Count\+Operators.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="582.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="analyzer.code.FXMLAnalyzerController">
+    <children>
+        <Button fx:id="button" layoutX="557.0" layoutY="146.0" onAction="#calculateMetricButtonAction" text="Оценить" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <MenuBar prefHeight="29.0" prefWidth="708.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Файл">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#openProjectMenuItem" text="Открыть проект" />
+              <MenuItem mnemonicParsing="false" onAction="#closeProgramm" text="Выход" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Метрики">
+              <items>
+              <MenuItem mnemonicParsing="false" onAction="#metricsCplusPlusMunuItem" text="C++" />
+              <MenuItem mnemonicParsing="false" onAction="#settingMunuItem" text="Настройка" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Помощь">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#aboutProgrammMunuItem" text="О программе" />
+            </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <TableView fx:id="tableMetric" layoutX="14.0" layoutY="65.0" prefHeight="187.0" prefWidth="494.0">
+      </TableView>
+      <TableView fx:id="tableDescript" layoutX="15.0" layoutY="291.0" prefHeight="277.0" prefWidth="679.0" />
+      <Label fx:id="labelMetrics" layoutX="15.0" layoutY="38.0" text="Количественные метрики" />
+      <Label fx:id="labelDesc" layoutX="15.0" layoutY="265.0" text="Описание" />
+      <Label fx:id="labelMark" layoutX="531.0" layoutY="65.0" text="Оценка" />
+    </children>
+</AnchorPane>

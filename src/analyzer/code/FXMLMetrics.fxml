@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="366.0" prefWidth="533.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="analyzer.code.FXMLMetricsController">
+   <children>
+      <ScrollPane layoutX="12.0" layoutY="12.0" prefHeight="343.0" prefWidth="510.0" vbarPolicy="ALWAYS">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="336.0" prefWidth="492.0">
+               <children>
+                  <CheckBox fx:id="checkBoxCountOperators" onAction="#actionCheckBoxCountOperators" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Count Operators" />
+                  <CheckBox fx:id="checkBoxLevelNest" onAction="#actionCheckBoxLevelNest" layoutX="13.0"  layoutY="121.0" mnemonicParsing="false" text="Level Nest" />
+                  <CheckBox fx:id="checkBoxMibbleNelIdent" onAction="#actionCheckBoxMibbleNelIdent" layoutX="14.0" layoutY="208.0" mnemonicParsing="false" text="Middle Len Ident" />
+                  <Label layoutX="41.0" layoutY="32.0" prefHeight="62.0" prefWidth="858.0" text="Метрика, которая показывает максимальное&#10;количество операторов между описанием переменной&#10;и ее инициализацией" />
+                  <Label layoutX="41.0" layoutY="147.0" text="Метрика, которая показывает максимальный&#10;уровень вложенности операторов if" />
+                  <Label layoutX="42.0" layoutY="234.0" text="Метрика, которая показывает среднюю длину &#10;идентификаторов" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

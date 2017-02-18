@@ -1,0 +1,116 @@
+\hypertarget{classanalyzer_1_1code_1_1LevelNesting}{}\section{analyzer.\+code.\+Level\+Nesting Class Reference}
+\label{classanalyzer_1_1code_1_1LevelNesting}\index{analyzer.\+code.\+Level\+Nesting@{analyzer.\+code.\+Level\+Nesting}}
+Inheritance diagram for analyzer.\+code.\+Level\+Nesting\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classanalyzer_1_1code_1_1LevelNesting}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classanalyzer_1_1code_1_1LevelNesting_ae2b01629780a540f7e261ce2c59d654e}{Level\+Nesting} ()
+\item 
+void \hyperlink{classanalyzer_1_1code_1_1LevelNesting_a09431a19031d65f2e53257c9d10beb49}{calculate} (\hyperlink{classanalyzer_1_1code_1_1Event}{Event} event)
+\item 
+double \hyperlink{classanalyzer_1_1code_1_1LevelNesting_ab16151c8d69cb40a84d73b2a9574fd85}{get\+Result} ()
+\item 
+void \hyperlink{classanalyzer_1_1code_1_1LevelNesting_a5aeb52565e529607aa8a3b2bd4beb490}{reset} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \hyperlink{classanalyzer_1_1code_1_1LevelNesting_aea9db3974d2a58fb0b559c830a0386c1}{get\+Name} ()
+\item 
+static String \hyperlink{classanalyzer_1_1code_1_1LevelNesting_a6e56b6f52fc6eb7b5645ce24e5dfe370}{get\+Mark} (double bad, double good, double metric)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Определяет максимальный уровень вложенности оператара if \begin{DoxyAuthor}{Author}
+tigler 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classanalyzer_1_1code_1_1LevelNesting_ae2b01629780a540f7e261ce2c59d654e}\label{classanalyzer_1_1code_1_1LevelNesting_ae2b01629780a540f7e261ce2c59d654e}} 
+\index{analyzer\+::code\+::\+Level\+Nesting@{analyzer\+::code\+::\+Level\+Nesting}!Level\+Nesting@{Level\+Nesting}}
+\index{Level\+Nesting@{Level\+Nesting}!analyzer\+::code\+::\+Level\+Nesting@{analyzer\+::code\+::\+Level\+Nesting}}
+\subsubsection{\texorpdfstring{Level\+Nesting()}{LevelNesting()}}
+{\footnotesize\ttfamily analyzer.\+code.\+Level\+Nesting.\+Level\+Nesting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Конструктор без параметров, инициализирует переменные экзмепляра. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classanalyzer_1_1code_1_1LevelNesting_a09431a19031d65f2e53257c9d10beb49}\label{classanalyzer_1_1code_1_1LevelNesting_a09431a19031d65f2e53257c9d10beb49}} 
+\index{analyzer\+::code\+::\+Level\+Nesting@{analyzer\+::code\+::\+Level\+Nesting}!calculate@{calculate}}
+\index{calculate@{calculate}!analyzer\+::code\+::\+Level\+Nesting@{analyzer\+::code\+::\+Level\+Nesting}}
+\subsubsection{\texorpdfstring{calculate()}{calculate()}}
+{\footnotesize\ttfamily void analyzer.\+code.\+Level\+Nesting.\+calculate (\begin{DoxyParamCaption}\item[{\hyperlink{classanalyzer_1_1code_1_1Event}{Event}}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+В зависимости от кода параметра event, изменяет максимальный, и текущий уровень вложенности. 
+\begin{DoxyParams}{Parameters}
+{\em event} & -\/ -\/ событие возникшее в синтаксическом анализаторе \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfaceanalyzer_1_1code_1_1IMetric}{analyzer.\+code.\+I\+Metric}.
+
+\mbox{\Hypertarget{classanalyzer_1_1code_1_1LevelNesting_a6e56b6f52fc6eb7b5645ce24e5dfe370}\label{classanalyzer_1_1code_1_1LevelNesting_a6e56b6f52fc6eb7b5645ce24e5dfe370}} 
+\index{analyzer\+::code\+::\+Level\+Nesting@{analyzer\+::code\+::\+Level\+Nesting}!get\+Mark@{get\+Mark}}
+\index{get\+Mark@{get\+Mark}!analyzer\+::code\+::\+Level\+Nesting@{analyzer\+::code\+::\+Level\+Nesting}}
+\subsubsection{\texorpdfstring{get\+Mark()}{getMark()}}
+{\footnotesize\ttfamily static String analyzer.\+code.\+Level\+Nesting.\+get\+Mark (\begin{DoxyParamCaption}\item[{double}]{bad,  }\item[{double}]{good,  }\item[{double}]{metric }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Статический метод для получения описания оценки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bad} & -\/ значение плохой оценки \\
+\hline
+{\em good} & -\/ значение хорошей оценки \\
+\hline
+{\em metric} & -\/ текущая оценка \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Строку оценки, в зависимости от значений параметров 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classanalyzer_1_1code_1_1LevelNesting_aea9db3974d2a58fb0b559c830a0386c1}\label{classanalyzer_1_1code_1_1LevelNesting_aea9db3974d2a58fb0b559c830a0386c1}} 
+\index{analyzer\+::code\+::\+Level\+Nesting@{analyzer\+::code\+::\+Level\+Nesting}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!analyzer\+::code\+::\+Level\+Nesting@{analyzer\+::code\+::\+Level\+Nesting}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily static String analyzer.\+code.\+Level\+Nesting.\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Статический метод для получения названия метрики. Использует перечисление \hyperlink{enumanalyzer_1_1code_1_1EnumNamesMetric}{Enum\+Names\+Metric} с названиями метрик. \begin{DoxyReturn}{Returns}
+Строку -\/ навание метрики. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classanalyzer_1_1code_1_1LevelNesting_ab16151c8d69cb40a84d73b2a9574fd85}\label{classanalyzer_1_1code_1_1LevelNesting_ab16151c8d69cb40a84d73b2a9574fd85}} 
+\index{analyzer\+::code\+::\+Level\+Nesting@{analyzer\+::code\+::\+Level\+Nesting}!get\+Result@{get\+Result}}
+\index{get\+Result@{get\+Result}!analyzer\+::code\+::\+Level\+Nesting@{analyzer\+::code\+::\+Level\+Nesting}}
+\subsubsection{\texorpdfstring{get\+Result()}{getResult()}}
+{\footnotesize\ttfamily double analyzer.\+code.\+Level\+Nesting.\+get\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Получить максимальный уровень вложенности \begin{DoxyReturn}{Returns}
+Максимальный уровень вложенности. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceanalyzer_1_1code_1_1IMetric}{analyzer.\+code.\+I\+Metric}.
+
+\mbox{\Hypertarget{classanalyzer_1_1code_1_1LevelNesting_a5aeb52565e529607aa8a3b2bd4beb490}\label{classanalyzer_1_1code_1_1LevelNesting_a5aeb52565e529607aa8a3b2bd4beb490}} 
+\index{analyzer\+::code\+::\+Level\+Nesting@{analyzer\+::code\+::\+Level\+Nesting}!reset@{reset}}
+\index{reset@{reset}!analyzer\+::code\+::\+Level\+Nesting@{analyzer\+::code\+::\+Level\+Nesting}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void analyzer.\+code.\+Level\+Nesting.\+reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Инициализировать переменные начальными значениями. 
+
+Implements \hyperlink{interfaceanalyzer_1_1code_1_1IMetric}{analyzer.\+code.\+I\+Metric}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/tigler/\+Net\+Beans\+Projects/\+Plagiat/src/analyzer/code/Level\+Nesting.\+java\end{DoxyCompactItemize}

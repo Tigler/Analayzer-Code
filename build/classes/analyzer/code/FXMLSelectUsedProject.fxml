@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="194.0" prefWidth="315.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="analyzer.code.FXMLSelectUsedProjectController">
+   <children>
+      <Label layoutX="14.0" layoutY="52.0" text="Выберите язык" />
+      <ComboBox layoutX="14.0" layoutY="81.0" prefHeight="25.0" prefWidth="293.0" />
+      <Button layoutX="14.0" layoutY="155.0" mnemonicParsing="false" text="Назад" />
+      <Button layoutX="239.0" layoutY="155.0" mnemonicParsing="false" text="Далее" />
+   </children>
+</AnchorPane>
